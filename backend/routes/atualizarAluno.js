@@ -1,4 +1,8 @@
-app.put('/alunos/:id', (req, res) => {
+const express = require('express');
+const router = express.Router();
+const db = require('../db');
+
+router.put('/:id', (req, res) => {
     const { id } = req.params;
     const { nome, idade, curso } = req.body;
     const query = 'UPDATE alunos SET nome = ?, idade = ?, curso = ? WHERE id = ?';
@@ -11,3 +15,5 @@ app.put('/alunos/:id', (req, res) => {
         }
     });
 });
+
+module.exports = router;

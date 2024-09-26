@@ -1,4 +1,8 @@
-app.delete('/alunos/:id', (req, res) => {
+const express = require('express');
+const router = express.Router();
+const db = require('../db');
+
+router.delete('/:id', (req, res) => {
     const { id } = req.params;
     const query = 'DELETE FROM alunos WHERE id = ?';
     db.query(query, [id], (err, result) => {
@@ -10,3 +14,5 @@ app.delete('/alunos/:id', (req, res) => {
         }
     });
 });
+
+module.exports = router;
