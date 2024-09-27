@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretório de dependências do Node.js
+node_modules/
+.pnpm-debug.log*
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Diretório de build
+dist/
+build/
+
+# Diretórios de caches
+.cache/
+.tmp/
+
+# IDEs e editores específicos
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs de banco de dados MySQL (se você estiver salvando logs no diretório do projeto)
+*.pid
+*.pid.lock

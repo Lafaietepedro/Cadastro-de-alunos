@@ -1,0 +1,167 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #aaaaaa;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilização do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilização dos botões de ação */
+button + button {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+button + button:hover {
+  background-color: #c82333;
+}
+
+/* Estilos Responsivos */
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  .App {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  li {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%; /* Botões ocupam toda a largura no celular */
+    margin-bottom: 10px;
+  }
+
+  button + button {
+    margin-left: 0;
+  }
+}
+
+/* Para tablets (telas médias) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .App {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  form {
+    gap: 15px;
+  }
+
+  input, button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  li {
+    padding: 12px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+  .App {
+    max-width: 70%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  input, button {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
