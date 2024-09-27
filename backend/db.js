@@ -1,7 +1,5 @@
-// db.js
 const mysql = require('mysql2');
 
-// Configurando a conexão com o banco de dados MySQL
 const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -9,7 +7,6 @@ const db = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-// Conectar ao banco de dados
 db.connect((err) => {
     if (err) {
         console.error('Erro ao conectar ao banco de dados:', err);

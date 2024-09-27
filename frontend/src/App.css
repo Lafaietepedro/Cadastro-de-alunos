@@ -62,7 +62,6 @@ li {
   flex-wrap: wrap;
 }
 
-/* Estilização dos botões de ação */
 button + button {
   margin-left: 10px;
   background-color: #dc3545;
@@ -72,9 +71,6 @@ button + button:hover {
   background-color: #c82333;
 }
 
-/* Estilos Responsivos */
-
-/* Para telas pequenas (celulares) */
 @media (max-width: 600px) {
   .App {
     margin: 20px;
@@ -100,7 +96,7 @@ button + button:hover {
   }
 
   button {
-    width: 100%; /* Botões ocupam toda a largura no celular */
+    width: 100%; 
     margin-bottom: 10px;
   }
 
@@ -109,7 +105,6 @@ button + button:hover {
   }
 }
 
-/* Para tablets (telas médias) */
 @media (min-width: 601px) and (max-width: 1024px) {
   .App {
     max-width: 90%;
@@ -138,7 +133,6 @@ button + button:hover {
   }
 }
 
-/* Para telas grandes (desktops) */
 @media (min-width: 1025px) {
   .App {
     max-width: 70%;
